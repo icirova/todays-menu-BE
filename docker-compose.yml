@@ -1,0 +1,16 @@
+version: '3.1'
+
+services:
+
+  todays-menu-db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: TodaysMenuPostgres
+    ports:
+      - 5433:5432
+
+#  todays-menu-be:
+#    build: .
+#    ports:
+#      - 8001:8000

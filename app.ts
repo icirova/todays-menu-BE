@@ -13,6 +13,8 @@ app.get('/', (req: Request, res: Response) => {
 });
 
 app.get('/menu', (req: Request, res: Response) => {
+
+  
   const menu = {
     name: "Svíčková",
     ingredience: [ "Smetana", "maso" ]
